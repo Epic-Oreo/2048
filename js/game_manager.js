@@ -49,7 +49,7 @@ GameManager.prototype.setup = function () {
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
-
+    localStorage.setItem("undoState", JSON.stringify([]))
     // Add the initial tiles
     this.addStartTiles();
   }
@@ -187,6 +187,8 @@ GameManager.prototype.move = function (direction) {
     }
 
     this.actuate();
+
+    updateUndoLog()
   }
 };
 
