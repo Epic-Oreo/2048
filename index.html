@@ -29,7 +29,7 @@
     <div class="above-game">
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <div class="buttons-ksam">
-        <a class="main-button" id="undoButton">Undo</a>
+        <a class="main-button" id="undoButton">Undo (?)</a>
         <a class="restart-button">New Game</a>
       </div>
     </div>
@@ -75,7 +75,8 @@
       </div>
     </div>
 
-    <!-- <div class="main-button" id="clearUndo">Clear</div> -->
+    <!-- <button class="main-button" onclick="genRandomFromState()">Test</button> -->
+    <div id="debug"></div>
 
 
     <p class="game-explanation">
@@ -92,6 +93,7 @@
   </div>
 
 
+  <script src="js/isaacCSPRNG-1.1.min.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
